@@ -70,7 +70,7 @@ export default function Landing() {
             </div>
       </section>
 
-      <PropsCarrusel number={3} header={"Propuestas de los cuidadanos"} />
+      <PropsCarrusel number={3} header={"Propuestas de los cuidadanos"} arrow={true}/>
     </>
   );
 }

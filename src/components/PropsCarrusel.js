@@ -12,14 +12,23 @@ export default function PropsCarrusel(data) {
         }
     })();
 
+    function checkTitle() {
+        //If headers are empty, do not print title
+        if(data["header"] != "") {
+            return(
+                <div className="propTitle">
+                    <span className="textTitSecond">{data["header"]}</span>
+                </div>
+            );
+        }
+    }
+
     return (
         <section className="propContainer">
-
-        <div className="propTitle">
-            <span className="textTitSecond">{data["header"]}</span>
-        </div>
         
-        <div className="propCarr">
+        {checkTitle()}
+         
+        <div className={data["arrow"] ? "propCarr" : "propCarrEmpty" }>
             {
                 list.map(i => <Proposal themes={i}/>)
             }

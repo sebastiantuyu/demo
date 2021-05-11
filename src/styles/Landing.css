@@ -130,7 +130,9 @@ section {
     padding: 0 0 4.5em 0;
 }
 
-.propCarr {
+.propCarr,
+.propCarrEmpty
+ {
     height:max-content;
     width: 100%;
     display: flex;

@@ -19,10 +19,10 @@ export default function SlideMenu(change) {
             <a href="/contacto">Contacto</a>
             </div>
             <div className="item">
-            <Link to="/crear-propuesta">Crear propuesta</Link>
+            <a href="/crear-propuesta">Crear propuesta</a>
             </div>
             <div className="item">
-            <Link to="/perfil/propuestas">Mis propuestas</Link>
+            <a href="/perfil/propuestas">Mis propuestas</a>
             </div>
             <div className="item">
                 <span className="change">

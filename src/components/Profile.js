@@ -1,8 +1,7 @@
 import '../styles/Profile.css';
 //import { profpic } from '../styles/sources/profpic.png'
 import Proposal from './Proposal.js'
-
-const def = ["1","2","3"]
+import PropsCarrusel from './PropsCarrusel';
 
 export default function Profile() {
 
@@ -21,9 +20,7 @@ export default function Profile() {
 
                 <div className="profContent">
                     <div className="profCarr">
-                        {
-                           def.map(obj => <Proposal />)
-                        }
+                        <PropsCarrusel number={3} header={""}/>
                     </div>   
                 </div>
         </div>
