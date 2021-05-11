@@ -1,0 +1,32 @@
+nav{
+    position: absolute;
+    width: 100%;
+    height:60px;
+    display: flex;
+    justify-content: space-around;
+    margin-top:10px;
+    z-index: 10;
+}
+
+.m{background:var(--m-vio);}
+
+[class^="btn"]{
+    width:var(--btn-size);
+    height:var(--btn-size);
+}
+
+.btnL-menu{
+    border-radius: 50%;
+}
+
+.btnR-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnR-menu svg {
+    color:white;
+    font-size: 40px;
+}
+

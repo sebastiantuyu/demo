@@ -1,0 +1,51 @@
+.cProp {
+    height:530px;
+    width:350px;
+    background:var(--m-white);
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cPropHeader {
+    height: 230px;
+    width:100%;
+    background:grey;
+}
+
+.cPropBody {
+        display: flex;    
+        flex-direction: column;
+        font-weight: 500;
+        padding: 10px 24px 0 24px;
+}
+
+.cPropBody > span{
+    padding: 0.5em 0 0.5em 0;
+}
+
+.cPropType {
+    color:var(--m-vio);
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.cPropType span {padding:0 2em 0 0;}
+
+.cPropTitle {
+    font-size: 20px;
+}
+
+
+.cPropReactions {
+    height: 50px;
+    width:80%;
+    border-top:1px solid grey;
+}
+
+.iconHorse:before {
+    position:absolute;
+    content:" ";
+    width:25px;
+    height:25px;
+    background:url('./sources/horse.svg') no-repeat center center / cover;
+}

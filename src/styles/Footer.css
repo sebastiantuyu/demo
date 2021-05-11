@@ -1,0 +1,46 @@
+.footer{
+    background:var(--m-dark);
+    height:483px;
+    position: absolute;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.foot {
+    height:85%;
+    width: 80%;
+    color:var(--m-white);
+
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.fItem {
+    height: 100%;
+    margin: 2% 0 0 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding:0.6em 0 1em 0;
+}
+
+.fDescription{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 10% 0;
+}
+
+.desCont {
+    padding: 0 2.5em 0 3em;
+}
+
+.fTitle{
+    font-weight: 700;
+}

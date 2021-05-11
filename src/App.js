@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router,
+         Switch,
+         Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Landing from './components/Landing.js';
+import Contact from './components/Contact.js';
+import MakeProp from './components/MakeProp.js';
+import Profile from  './components/Profile.js';
+import Footer from './components/Footer.js';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Nav />        
+          <Switch>
+              <Route exact path="/" component={Landing} />
+              {/* Agregar TODAS las propuestas seccion*/}
+              <Route exact path="/crear-propuesta" component={MakeProp} />
+              <Route exact path="/perfil/propuestas" component={Profile} />
+              <Route exact path="/contacto" component={Contact}/>
+          </Switch>
+        <Footer avoid={"/contacto"}/>
+      </Router>
   );
 }
 
-export default App;

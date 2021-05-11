@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;700&display=swap');
+:root {
+  --m-vio:#4440DB;
+  --m-grey:#F5F7FA;
+  --m-white:#FFFFFF; 
+  --m-dark:#1F2430;
+  --s-dark:#3D3D4E;
+
+  --btn-size:62px;
+  --menu-position:-1000px;
+}
+
+body {
+  margin: 0;
+  font-family:'Raleway';
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  background:var(--m-grey);
+
+  overflow-x: hidden;
+}
+
+.button{
+  font-size: 18.72px;
+  width:225px;
+  height: 62px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+  padding:0 0.75em 0 0.75em;
+}
+
+.btn-f-v {
+  background:var(--m-vio);
+  color: white;
+}
+.btn-f-l {
+  background:var(--m-white);
+}
+.btn-border-v {
+  border:1px solid var(--m-vio);
+  color: var(--m-vio);
+}
+.social span {
+  padding:0 0.65em 0 0; 
+}
+
+.textTitle {
+  font-size: 56px;
+  font-weight: 500;
+  color:var(--m-dark);
+}
+.textTitSecond {
+  font-size:35px;
+  color:var(--s-dark);
+  font-weight: 500;
+}
+
+.textRemark {
+  font-size: 31px;
+  color:var(--m-vio);
+}
+.textContent {
+  font-size: 19px;
+  color:var(--s-dark);
+  font-weight: 500;
+}
+
+
