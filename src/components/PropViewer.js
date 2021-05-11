@@ -31,8 +31,10 @@ export default function PropViewer() {
                 </div>
 
                 <div className="hUserInfo b-grey">
-                    <UserInfo name={"Rosa Jimenez"}/>
-                    <Themes id={8}/>
+                    <div>
+                        <UserInfo name={"Rosa Jimenez"}/>
+                        <Themes id={8}/>
+                    </div>
                     <Reactions likes={3} noLikes={1} comments={2} />
                 </div>
 

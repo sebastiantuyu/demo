@@ -62,7 +62,7 @@ export default function Landing() {
                     Ver más acerca de nosotros 
                 </span>
 
-                <div className="button btn-f-v">
+                <div className="button btn-f-v makeUser">
                     <span>Crear usuario</span>
                     <FontAwesomeIcon icon={faFacebookF} />                    
                 </div>

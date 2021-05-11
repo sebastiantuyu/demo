@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.themeBody span {padding:0 2em 0 0;}
+.themeBody span {padding:0 6px 0 0;}
 
 .themeIcon:before {
     position:absolute;

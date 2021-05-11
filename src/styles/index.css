@@ -91,4 +91,5 @@ tag{
   height: 100%;
   display: inline-flex;
   align-items: center;
+  padding:0 2em 0 0;
 }

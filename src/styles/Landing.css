@@ -162,3 +162,7 @@ section {
     background:url("./sources/arrow.svg") no-repeat center center / cover;
     transform:rotate(180deg);
 }
+
+.makeUser > span {
+    padding:0 0.5em 0 0;
+}
