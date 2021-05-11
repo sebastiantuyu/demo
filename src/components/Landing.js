@@ -1,7 +1,7 @@
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropsCarrusel from './PropsCarrusel.js'
 import "../styles/Landing.css";
-import Proposal from "./Proposal.js"
 
 export default function Landing() {
   return (
@@ -70,19 +70,7 @@ export default function Landing() {
             </div>
       </section>
 
-      <section className="propContainer">
-
-        <div className="propTitle">
-            <span className="textTitSecond">Propuestas de  los ciudadanos</span>
-        </div>
-        
-        <div className="propCarr">
-            <Proposal />
-            <Proposal />
-            <Proposal />
-        </div>
-
-      </section>
+      <PropsCarrusel number={3} header={"Propuestas de los cuidadanos"} />
     </>
   );
 }

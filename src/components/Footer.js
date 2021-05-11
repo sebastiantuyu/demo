@@ -1,19 +1,10 @@
 import '../styles/Footer.css';
 import SocialBanner from './SocialBanner.js';
 
-import { withRouter } from 'react-router-dom';
-
 
 export default function Footer(avoid) {
     
-    /*history.listen((location, action) => {
-    console.log("on route change");
-    console.log(avoid["avoid"])
-    console.log(avoid["avoid"] != window.location.pathname)
-    // Do stuff.
-    })*/
-    //console.log(withRouter()
-    console.log( window.location.pathname )
+    // eslint-disable-next-line
     if(avoid["avoid"] != window.location.pathname)
     {
     return (

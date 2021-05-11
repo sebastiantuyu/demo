@@ -7,17 +7,18 @@ import Contact from './components/Contact.js';
 import MakeProp from './components/MakeProp.js';
 import Profile from  './components/Profile.js';
 import Footer from './components/Footer.js';
+import PropViewer from './components/PropViewer.js';
 
 export default function App() {
   return (
       <Router>
         <Nav />        
           <Switch>
-              <Route exact path="/" component={Landing} />
-              {/* Agregar TODAS las propuestas seccion*/}
+    {/* OK*/} <Route exact path="/" component={Landing} />
+    {/* OK*/} <Route exact path="/contacto" component={Contact}/>
               <Route exact path="/crear-propuesta" component={MakeProp} />
-              <Route exact path="/perfil/propuestas" component={Profile} />
-              <Route exact path="/contacto" component={Contact}/>
+    {/* OK*/} <Route exact path="/perfil/propuestas" component={Profile} />
+              <Route exact path="/propuestas/:id" component={PropViewer} />
           </Switch>
         <Footer avoid={"/contacto"}/>
       </Router>

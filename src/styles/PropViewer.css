@@ -1,0 +1,97 @@
+.pView{
+    --header-size:468px;
+    --header-width:800px;
+    height: 2389px;
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+
+.vImage {
+    margin-top: 15%;
+    width:var(--header-width);
+    height: 450px;
+    background:grey;
+
+    z-index: 2;
+    align-self: center;
+}
+
+
+.vHead{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:var(--header-size);
+}
+
+.vHeader {
+    position:absolute;
+    top:var(--header-size);
+    left:0;
+    width:100%;
+    height: 1850px;
+    background:var(--m-white);
+    z-index: 1;
+}
+
+.vBody {
+    position: absolute;
+    width: var(--header-width);
+    height: max-content;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hTitle {
+    margin:5% 0 0 0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hT{
+    width: 60%;
+    font-weight: 700 !important;
+}
+
+.sIcon > svg {
+    padding:0 1em 0 1em;
+}
+
+.hUserInfo {
+    margin:4.5% 0 0 0;
+    width:100%;
+    height:80px;
+    border-top:1px solid grey;
+}
+
+.hUserInfo > div {
+    height:100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.hDescr ,
+.hDesCont {
+    padding:2% 0 2% 0;
+}
+
+.hTags {
+    width: 100%;
+    margin:0 0 2% 0;
+    height: max-content;
+    display: flex;flex-wrap: wrap;
+}
+.hTags > tag  {
+    margin: 0.8em; 
+}
+
+.b-grey {
+    border-bottom:1px solid grey;
+}
+

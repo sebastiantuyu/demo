@@ -5,6 +5,7 @@
   --m-white:#FFFFFF; 
   --m-dark:#1F2430;
   --s-dark:#3D3D4E;
+  --s-grey:#D7D8DA;
 
   --btn-size:62px;
   --menu-position:-1000px;
@@ -69,3 +70,25 @@ body {
 }
 
 
+tag{
+  padding:1.5em;
+  background:var(--s-grey);
+  color:var(--m-dark);
+  font-weight: 700;
+  font-size: 14px;
+  width: max-content;
+}
+
+.userPic {
+  height:50px;
+  width:50px;
+  background:grey;
+  border-radius: 50%;
+  margin:0 1em 0 0;
+}
+
+.userBody{
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
