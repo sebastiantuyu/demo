@@ -1,16 +1,14 @@
 import '../styles/Proposal.css';
+import Themes from './Themes.js';
+import Reactions from './Reactions';
 
-export default function Proposal() {
+export default function Proposal(data) {
     return(
         <div className="cProp">
             <div className="cPropHeader"></div>
             <div className="cPropBody">
 
-
-                <span className="cPropType">
-                    <span className="iconHorse"></span> 
-                    <span>Artes y Expresión</span>
-                </span>
+              <Themes id={data["themes"]}/>  
 
                 <span className="cPropTitle">
                     Más  espacios recreativos para artistas urbanos
@@ -23,7 +21,7 @@ export default function Proposal() {
             </div>
             <div className="cPropReactions">
                 <div className="reactContainer">
-                    
+                    <Reactions likes={3} noLikes={2} comments={1}/>
                 </div>
             </div>
         </div>

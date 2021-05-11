@@ -7,6 +7,8 @@ import Comment from './Comment.js'
 import PropsCarrusel from './PropsCarrusel.js'
 import '../styles/PropViewer.css';
 import UserInfo from './UserInfo.js';
+import Reactions from './Reactions.js';
+import Themes from './Themes.js';
 
 export default function PropViewer() {
     const param = useParams()
@@ -29,17 +31,9 @@ export default function PropViewer() {
                 </div>
 
                 <div className="hUserInfo b-grey">
-                    {/*<div className="info">
-                        <div className="iPic">
-
-                        </div>
-                        <div className="iName">
-                            Rosa Jimenez
-                        </div>
-                    </div>*/}
                     <UserInfo name={"Rosa Jimenez"}/>
-
-
+                    <Themes id={8}/>
+                    <Reactions likes={3} noLikes={1} comments={2} />
                 </div>
 
                 <div className="hDescr b-grey">
@@ -73,6 +67,19 @@ export default function PropViewer() {
                     <Comment name={"Maria Morelos"} content={"Los murales más antiguos, las pinturas rupestres, datan del paleolítico superior, se encuentran en cuevas, pintados sobre las paredes de roca con pigmentos naturales de plantas y minerales, y aglutinantes como la resina. Una concepción artística que tendría su continuidad quizá en la pintura sobre muros y paredes, que predominó durante la antigüedad,2​ y durante la época románica. Durante el Renacimiento el arte mural evolucionó con la técnica al fresco —como los conservados en las Estancias del Vaticano"}/>
                     <Comment name={"Maria Morelos"} content={"Los murales más antiguos, las pinturas rupestres, datan del paleolítico superior, se encuentran en cuevas, pintados sobre las paredes de roca con pigmentos naturales de plantas y minerales, y aglutinantes como la resina. Una concepción artística que tendría su continuidad quizá en la pintura sobre muros y paredes, que predominó durante la antigüedad,2​ y durante la época románica. Durante el Renacimiento el arte mural evolucionó con la técnica al fresco —como los conservados en las Estancias del Vaticano"}/>
                     <Comment name={"Maria Morelos"} content={"Los murales más antiguos, las pinturas rupestres, datan del paleolítico superior, se encuentran en cuevas, pintados sobre las paredes de roca con pigmentos naturales de plantas y minerales, y aglutinantes como la resina. Una concepción artística que tendría su continuidad quizá en la pintura sobre muros y paredes, que predominó durante la antigüedad,2​ y durante la época románica. Durante el Renacimiento el arte mural evolucionó con la técnica al fresco —como los conservados en las Estancias del Vaticano"}/>
+
+                    <div className="addComment">
+                        <div className="aCBody">
+                            <div className="userPic"></div>
+                            <input type="text" placeholder="Aporta a la propuesta con una opinion"/>
+                        </div>
+                        
+                        <div className="aCButtons">
+                            <div className="button">Cancelar</div>
+                            <div className="button btn-f-v">Comentar</div>
+                        </div>
+                
+                    </div>
                 </div>   
         
             </div>

@@ -23,14 +23,6 @@
     padding: 0.5em 0 0.5em 0;
 }
 
-.cPropType {
-    color:var(--m-vio);
-    display: inline-flex;
-    align-items: flex-start;
-}
-
-.cPropType span {padding:0 2em 0 0;}
-
 .cPropTitle {
     font-size: 20px;
 }
@@ -40,12 +32,6 @@
     height: 50px;
     width:80%;
     border-top:1px solid grey;
+    display: flex;align-items: center;
 }
 
-.iconHorse:before {
-    position:absolute;
-    content:" ";
-    width:25px;
-    height:25px;
-    background:url('./sources/horse.svg') no-repeat center center / cover;
-}

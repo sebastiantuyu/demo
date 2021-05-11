@@ -1,0 +1,15 @@
+.reactions {
+    display: inline-flex;
+    width: max-content;
+}
+
+.reactions div {
+    display:flex;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

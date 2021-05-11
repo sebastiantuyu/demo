@@ -7,7 +7,8 @@ export default function PropsCarrusel(data) {
     (function loadData() {
         list = []
         for(let i = 0; i < data["number"]; i++) {
-            list.push(i)
+            // Simple dummy-random number for showing diff themes
+            list.push(Math.floor(Math.random() * (9 - 1)) + 1)
         }
     })();
 
@@ -20,7 +21,7 @@ export default function PropsCarrusel(data) {
         
         <div className="propCarr">
             {
-                list.map(i => <Proposal />)
+                list.map(i => <Proposal themes={i}/>)
             }
         </div>
 

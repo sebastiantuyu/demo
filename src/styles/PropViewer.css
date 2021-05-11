@@ -1,6 +1,6 @@
 .pView{
     --header-size:468px;
-    --header-width:800px;
+    --header-width:900px;
     height: 2389px;
     display: flex;flex-direction: column;
     align-items: center;
@@ -67,6 +67,7 @@
     width:100%;
     height:80px;
     border-top:1px solid grey;
+    display: flex;
 }
 
 .hUserInfo > div {
@@ -95,3 +96,27 @@
     border-bottom:1px solid grey;
 }
 
+
+.aCBody{
+    width: 100%;
+    display: inline-flex;
+}
+
+.aCBody > input {
+    width: 90%;
+    border-top:0px;border-left: 0px;border-right: 0px;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+}
+
+.aCBody > input:focus {
+    outline:none;
+}
+
+.aCButtons {
+    display: inline-flex;
+    margin:2% 0 0 0;
+    width: 100%;
+    justify-content: flex-end;
+}

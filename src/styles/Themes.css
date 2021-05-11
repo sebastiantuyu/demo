@@ -1,0 +1,14 @@
+.themeBody {
+    color:var(--m-vio);
+    display: inline-flex;
+    align-items: center;
+}
+
+.themeBody span {padding:0 2em 0 0;}
+
+.themeIcon:before {
+    position:absolute;
+    content:" ";
+    width:25px;
+    height:25px;
+}
