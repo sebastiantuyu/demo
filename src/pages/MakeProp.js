@@ -46,7 +46,9 @@ export default function MakeProp() {
             case "tag":
                 setState({...state,tag: e.target.value})
                 break
-
+            case "content":
+                setState({...state,content: e.target.value})
+                break
         }
 
         
@@ -137,7 +139,7 @@ export default function MakeProp() {
                     <div className="flex-column align-items-center">
                         <input type="text" className="inputfTitle iFVariant"
                             placeholder="Decribe tu propuesta" 
-                            onChange={(e)=>handleChange(e,"tag")}/>
+                            onChange={(e)=>handleChange(e,"content")}/>
                         <div className="button btn-f-v buttonVariant" onClick={nextStep}> Click Me</div>
                     </div>
 

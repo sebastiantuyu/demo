@@ -16,6 +16,7 @@
     height: 40px;
     background:grey;
     border-radius: 50%;
+    transition: 0.25s;
 }
 
 .pBarIcon::after{

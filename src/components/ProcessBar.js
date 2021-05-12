@@ -26,13 +26,13 @@ export default function ProcessBar(data) {
         for(let i=0;i<ProcessList.length;i++)
         {
             if(i<data["position"]){
-                items.push(<ProcessItem title={"tema"} active={true}/>)
+                items.push(<ProcessItem title={ProcessList[i].title} active={true}/>)
             } else {
-                items.push(<ProcessItem title={"tema"}/>)
+                items.push(<ProcessItem title={ProcessList[i].title}/>)
             }
         }
 
-        console.log(items)
+        console.log(ProcessList)
         return items
     }
 

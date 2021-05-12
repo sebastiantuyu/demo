@@ -27,8 +27,8 @@ export default function Footer(data) {
                     <SocialBanner />
                 </div>
 
-               <div className="fItem">
-                   <span className="fTitle">Ciudadano ejemplar</span>
+               <div className="footerItem">
+                   <span className="footerTitle">Ciudadano ejemplar</span>
                    <ul>
                        <li>Ecología</li>
                        <li>Salud</li>
@@ -40,8 +40,8 @@ export default function Footer(data) {
                    </ul>
                </div>
 
-               <div className="fItem">
-                   <span className="fTitle">Explora</span>
+               <div className="footerItem">
+                   <span className="footerTitle">Explora</span>
                    <ul>
                        <li>Acerca de nosotros</li>
                        <li>Registrate</li>
@@ -49,8 +49,8 @@ export default function Footer(data) {
                    </ul>
                </div>
 
-                <div className="fItem">
-                    <span className="fTitle">Contacto</span>
+                <div className="footerItem">
+                    <span className="footerTitle">Contacto</span>
 
                     <ul>
                         <li>Telefonos</li>
