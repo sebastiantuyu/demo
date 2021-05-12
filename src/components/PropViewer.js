@@ -86,7 +86,9 @@ export default function PropViewer() {
         
             </div>
         </div>
-        <PropsCarrusel number={3} header={"Más propuestas"} />
+        <section className="moreProps">
+            <PropsCarrusel number={3} header={"Más propuestas"} />
+        </section>
         </>
     )
 }

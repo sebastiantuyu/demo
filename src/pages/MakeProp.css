@@ -1,0 +1,97 @@
+.formProp {
+    width: 1088px;
+    height: 570px;
+    background:white;
+    border-radius: 30px;
+    margin:5% 0 0 0;
+
+    --body-size:80%;
+}
+
+.fPheader,
+.fPbody {
+    width: 100%;
+}
+
+.fPheader{
+    position: relative;
+    height: calc(100% - var(--body-size));
+}
+
+.fPbody {
+    height: var(--body-size);
+}
+
+
+.backStep {
+    position: relative;
+    top:0;
+    left:0;
+    font-size: 25px;
+    color:lightgray;
+    justify-self: flex-start;
+    margin:0 4em 0 1em ;
+    cursor: pointer;
+}
+
+.fTitle {
+    width: 80%;
+    position: absolute;
+    margin:0 10% 0 10%;
+}
+
+.themeSelect {
+    height:95px;
+    margin:0 0 0 12.5%;
+    cursor: pointer;
+}
+
+.themeLogo 
+{
+    border:1px solid grey;
+    height:50px;width:50px;
+    border-radius: 50%;
+}
+.themeSelect > span {
+    margin: 0 1em 0 0;
+}
+
+.inputfTitle{
+    height: 62px;
+    width: 350px;
+    margin:0 2% 0 0;
+}
+
+.inputfTitle:placeholder-shown {
+    font-size: 19px;
+    padding: 0 0 0 0.5em;
+}
+
+.inputfTitle:focus {
+    outline: none;
+}
+
+.helperText {
+    font-size: 19px;
+}
+
+.buttonVariant {
+    width:100% !important;
+    padding: 0 !important;
+}
+
+.iFVariant {
+    height:175px !important;
+    width:600px !important;
+    margin:0  !important;
+}
+
+.addFile {
+    background:var(--s-grey);
+    color:white;
+}
+
+.uploadButton {
+    color:var(--m-dark);
+    border:2px solid var(--m-dark);
+}

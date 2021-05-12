@@ -1,0 +1,45 @@
+.pBarBody {
+    width:max-content;
+    height:80px;
+}
+
+.pBarItem {
+    height: 100%;
+    width: 110px;
+    max-height:70px;
+    margin:0 8px 0 8px;
+}
+
+.pBarIcon {
+    position: relative;
+    width:40px;
+    height: 40px;
+    background:grey;
+    border-radius: 50%;
+}
+
+.pBarIcon::after{
+    position: absolute;
+    content:" ";
+    top:20px;
+    left:40px;
+    height: 3px;
+    width:100px;
+    background: gray;
+}
+
+.pBarItem:last-of-type > .pBarIcon::after {
+    width: 0;height: 0;
+}
+.pBarName {
+    font-weight: 600;
+}
+
+.activeItem {
+    background: #0A6CFF;
+}
+.activeItem::after {
+    background: linear-gradient(90deg, #0A6CFF,#FFFFFF);
+
+}
+

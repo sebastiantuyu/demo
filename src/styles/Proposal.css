@@ -1,3 +1,11 @@
+.cPropLink,
+.cPropLink:hover {
+    text-decoration: none;
+    color:unset;
+}
+
+
+
 .cProp {
     height:530px;
     width:350px;

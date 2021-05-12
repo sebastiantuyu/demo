@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import PropsCarrusel from '../components/PropsCarrusel';
 import Themes from '../components/Themes';
 import '../styles/PropViewer.css';
 import './AllProposals.css';
 
 export default function AllProposals() {
-    const arr = [1,2,3,4,5,6,7,8]
+    const [theme_, setTheme_] = useState(1)
+    const arr = Array(8).fill().map((i,pos) => pos+1)
+    console.log(theme_)
 
     return (
             <>
@@ -16,14 +19,15 @@ export default function AllProposals() {
 
                     <div className="allThemes d-flex">
                         {
-                        arr.map(i => {return <Themes id={i} activeTheme={true}/>})
+                        arr.map(i => {return <Themes id={i} activeTheme={true} context={{theme_,setTheme_}}/>})
                         }
                     </div>
                 </div>
-                <div className="vHeader">
-                    <PropsCarrusel header={""} number={4} arrow={false}/>
-                    <PropsCarrusel header={""} number={4} arrow={false}/>
-                    <PropsCarrusel header={""} number={4} arrow={false}/>
+                <div className="vHeader flex-column justify-content-around">
+                    {
+                        Array(3).fill().map((i,pos) => <PropsCarrusel header={""} number={4} arrow={false} context={theme_}/>)
+                    }
+                    
                 </div>
             </div>
             </>

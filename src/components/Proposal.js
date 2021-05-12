@@ -4,7 +4,8 @@ import Reactions from './Reactions';
 
 export default function Proposal(data) {
     return(
-        <div className="cProp">
+        <a href="/propuestas/123" className="cPropLink">
+        <div className="cProp" >
             <div className="cPropHeader"></div>
             <div className="cPropBody">
 
@@ -25,5 +26,6 @@ export default function Proposal(data) {
                 </div>
             </div>
         </div>
+        </a>
     )
 }

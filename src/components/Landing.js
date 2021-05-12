@@ -69,8 +69,8 @@ export default function Landing() {
 
             </div>
       </section>
-      
-      <section className="trendProps">
+
+      <section className="trendProps flex-column justify-content-center">
         <PropsCarrusel number={3} header={"Propuestas de los cuidadanos"} arrow={true}/>
       </section>
     </>

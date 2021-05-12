@@ -2,10 +2,17 @@ import '../styles/Footer.css';
 import SocialBanner from './SocialBanner.js';
 
 
-export default function Footer(avoid) {
-    
+export default function Footer(data) {
+    let avoid = false
     // eslint-disable-next-line
-    if(avoid["avoid"] != window.location.pathname)
+    if(data["avoid"]) {
+        data["avoid"].forEach(element => {
+            console.log(window.location.pathname)
+            if(element == window.location.pathname.split("/")[1])
+            { avoid = true  } 
+        });
+    }
+    if(!avoid)
     {
     return (
        <section className="footer">
