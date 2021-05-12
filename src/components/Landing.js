@@ -19,9 +19,9 @@ export default function Landing() {
             </span>
 
             <div className="buttonSection">
-              <div className="button btn-f-v">Hacer propuesta</div>
+              <div onClick={() => window.location.href="/crear-propuesta"} className="button btn-f-v">Hacer propuesta</div>
 
-              <div className="button btn-border-v">Conocer propuestas</div>
+              <div onClick={() => window.location.href="/all"} className="button btn-border-v">Conocer propuestas</div>
             </div>
           </div>
         </div>
