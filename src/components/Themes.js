@@ -41,6 +41,7 @@ const themes = {
     7:{
          name:"Espacios con accesibilidad",
          logo:EspAcc,
+         short:"Espacios",
     },
     8:{
          name:"Artes y Expresión",
@@ -49,12 +50,29 @@ const themes = {
 }
 
 export default function Themes(data) {
+    let all_ = document.getElementsByClassName("themeBody")
+    
+    function click(id){
+        for(let i=0;i<all_.length;i++){all_[i].classList.remove("activeTheme")}
+        all_[id-1].classList.add("activeTheme")
+    }
+    
+
     return (
-    <span className="themeBody">
+    <span className="themeBody"
+                    onClick={   data["activeTheme"] ?
+                                ()=>{click(data["id"])}
+                                : " "
+                            }
+                    key={data["id"]}
+                    data-id={data["id"]}>
         <span className="themeIcon">
             <img src={themes[data["id"]].logo} alt="" />
         </span> 
-        <span>{themes[data["id"]].name}</span>
+        <span>{ data["activeTheme"] ?
+                themes[data["id"]].short ? themes[data["id"]].short : themes[data["id"]].name
+                : themes[data["id"]].name                
+               }</span>
     </span>
     )
 }

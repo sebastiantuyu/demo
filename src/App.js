@@ -8,6 +8,7 @@ import MakeProp from './components/MakeProp.js';
 import Profile from  './components/Profile.js';
 import Footer from './components/Footer.js';
 import PropViewer from './components/PropViewer.js';
+import AllProposals from './pages/AllProposals';
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
     {/* OK*/} <Route exact path="/contacto" component={Contact}/>
               <Route exact path="/crear-propuesta" component={MakeProp} />
     {/* OK*/} <Route exact path="/perfil/propuestas" component={Profile} />
-              <Route exact path="/propuestas/:id" component={PropViewer} />
+    {/* OK*/} <Route exact path="/propuestas/:id" component={PropViewer} />
+              <Route exact path="/all" component={AllProposals} />
           </Switch>
         <Footer avoid={"/contacto"}/>
       </Router>

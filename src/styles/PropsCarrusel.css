@@ -1,0 +1,38 @@
+.propContainer {
+    height: max-content;
+    display: flex;flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.propCarr,
+.propCarrEmpty
+ {
+    height:max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+}
+
+.propCarr::after,
+.propCarr::before {
+    position: absolute;
+    content: " ";
+    top:252.5px;
+
+    height:45px;
+    width: 45px;
+}
+
+
+.propCarr::before {
+    left:25px;
+    background:url("./sources/arrow.svg") no-repeat center center / cover;
+}
+
+.propCarr::after {
+    right:25px;
+    background:url("./sources/arrow.svg") no-repeat center center / cover;
+    transform:rotate(180deg);
+}

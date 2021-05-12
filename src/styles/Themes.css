@@ -4,7 +4,10 @@
     align-items: center;
 }
 
-.themeBody span {padding:0 6px 0 0;}
+.themeBody span {
+    padding:0 6px 0 0;
+    cursor: pointer;
+}
 
 .themeIcon:before {
     position:absolute;

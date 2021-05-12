@@ -24,9 +24,9 @@ section {
     align-items: flex-end;
 }
 
-.propContainer {
+/*.propContainer {
     height: 864px;
-}
+}*/
 
 
 .mainSection { 
@@ -118,11 +118,7 @@ section {
 }
 .parTitle > span {padding:0 0 1em 0;}
 
-.propContainer {
-    display: flex;flex-direction: column;
-    justify-content:center;
-    align-items: center;
-}
+
 
 .propTitle {
     width:100%;
@@ -130,38 +126,10 @@ section {
     padding: 0 0 4.5em 0;
 }
 
-.propCarr,
-.propCarrEmpty
- {
-    height:max-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    position:relative;
+.trendProps{
+    height:864px;
 }
 
-
-.propCarr::after,
-.propCarr::before {
-    position: absolute;
-    content: " ";
-    top:252.5px;
-
-    height:45px;
-    width: 45px;
-}
-
-
-.propCarr::before {
-    left:25px;
-    background:url("./sources/arrow.svg") no-repeat center center / cover;
-}
-
-.propCarr::after {
-    right:25px;
-    background:url("./sources/arrow.svg") no-repeat center center / cover;
-    transform:rotate(180deg);
-}
 
 .makeUser > span {
     padding:0 0.5em 0 0;

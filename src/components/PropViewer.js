@@ -5,10 +5,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Tags from './Tags.js';
 import Comment from './Comment.js'
 import PropsCarrusel from './PropsCarrusel.js'
-import '../styles/PropViewer.css';
 import UserInfo from './UserInfo.js';
 import Reactions from './Reactions.js';
 import Themes from './Themes.js';
+import '../styles/PropViewer.css';
 
 export default function PropViewer() {
     const param = useParams()

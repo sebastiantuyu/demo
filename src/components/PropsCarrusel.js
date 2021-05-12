@@ -1,3 +1,4 @@
+import '../styles/PropsCarrusel.css'
 import Proposal from './Proposal.js'
 
 let list = []

@@ -93,3 +93,16 @@ tag{
   align-items: center;
   padding:0 2em 0 0;
 }
+
+.flex-column {
+  display: flex;flex-direction: column;
+}
+
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
