@@ -2,6 +2,7 @@ import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropsCarrusel from './PropsCarrusel.js'
 import "../styles/Landing.css";
+import ThemeBox from "./ThemeBox.js";
 
 export default function Landing() {
   return (
@@ -38,14 +39,7 @@ export default function Landing() {
         </div>
 
         <div className="themesAll">
-          <div className="theme"></div>
-          <div className="theme"></div>
-          <div className="theme"></div>
-          <div className="theme"></div>
-          <div className="theme"></div>
-          <div className="theme"></div>
-          <div className="theme"></div>
-          <div className="theme"></div>
+            <ThemeBox />
         </div>
       </section>
 

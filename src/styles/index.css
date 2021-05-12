@@ -114,3 +114,11 @@ tag{
   justify-content: center;
   align-items: center;
 }
+
+.align-items-around{
+  align-items: space-around;
+}
+
+.t-20{
+  font-size: 20px;
+}

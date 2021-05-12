@@ -24,11 +24,6 @@ section {
     align-items: flex-end;
 }
 
-/*.propContainer {
-    height: 864px;
-}*/
-
-
 .mainSection { 
     top: -60px;
     display: inline-flex;
@@ -100,6 +95,7 @@ section {
     width:200px;
     height: 209px;
     background:var(--m-white);
+    padding:0 0 0 1.5em;
 }
 
 .parPhoto {
@@ -133,4 +129,8 @@ section {
 
 .makeUser > span {
     padding:0 0.5em 0 0;
+}
+
+.boxThemeLogo > img{
+    height:35px;
 }
