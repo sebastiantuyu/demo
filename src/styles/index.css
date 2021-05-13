@@ -25,6 +25,7 @@ body {
 
   overflow-x: hidden;
   line-height: normal !important;
+  zoom:0.8 !important;
 }
 
 .button{

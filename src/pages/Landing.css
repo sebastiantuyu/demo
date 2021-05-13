@@ -1,0 +1,136 @@
+section {
+    width: 100%;
+}
+
+.mainSection{
+    height: 793px;
+    background:var(--m-white);
+}
+
+.themesProps{
+    height: 614px;
+    display: flex;
+    justify-content: center;
+
+    padding:10% 0 0 0;
+}
+
+.aboutUs{
+    height:614px;
+    background:var(--m-white);
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mainSection { 
+    top: -60px;
+    display: inline-flex;
+}
+
+.mainTitle{
+    width: 50%;
+    height: 100%;
+}
+
+.mainImage {
+    width:50%;
+    height: 100%;
+    background:url("../styles/sources/iStock-1189131263_1.png") no-repeat center center;
+    background-size: cover;
+}
+
+.titleContent {
+    position: relative;
+    top:208px;
+    width:75%;
+    margin-left:30%;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titleContent span {
+    padding:12px 0 12px 0;
+}
+
+.buttonSection {
+    margin:5% 0 0 0;
+    display: flex;
+}
+
+.buttonSection div {
+    margin:0 2% 0 2%;
+}
+
+.themesTitle {
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    position:relative;
+    top:0;
+}
+
+.themesTitle span {
+    margin:0 0 0.5em 0; 
+}
+
+.themeSubs { padding: 0 3.5em 0 0;}
+.themesAll {
+    width: max-content;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap: 16px;
+}
+
+.themeTit {
+    padding: 0 0.5em 0 0;
+}
+
+.theme {
+    width:200px;
+    height: 209px;
+    background:var(--m-white);
+    padding:0 0 0 1.5em;
+}
+
+.parPhoto {
+    height:590px;
+    width: 40%;
+    background:url('../styles/sources/iStock-1130307846_1.png') no-repeat;
+    border:none;
+}
+
+.parTitle {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:400px;
+    justify-content: center;
+}
+.parTitle > span {padding:0 0 1em 0;}
+
+
+
+.propTitle {
+    width:100%;
+    text-align: center;
+    padding: 0 0 4.5em 0;
+}
+
+.trendProps{
+    height:864px;
+}
+
+
+.makeUser > span {
+    padding:0 0.5em 0 0;
+}
+
+.boxThemeLogo > img{
+    height:35px;
+}
