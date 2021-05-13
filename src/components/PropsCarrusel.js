@@ -3,9 +3,7 @@ import Proposal from './Proposal.js'
 
 let list = []
 
-export default function PropsCarrusel(data) {
-    //console.log(data["context"])
-    
+export default function PropsCarrusel(data) {  
     
     function loadData() {
         list = []
@@ -43,7 +41,7 @@ export default function PropsCarrusel(data) {
          
         <div className={data["arrow"] ? "propCarr" : "propCarrEmpty" }>
             {
-                list.map(i => <Proposal themes={i}/>)
+                list.map((i,index) => <Proposal themes={i} key={index}/>)
             }
         </div>
 

@@ -5,9 +5,9 @@ export default function ThemeBox() {
     return (
         <>
         {
-            Object.keys(themesList).map(key => {
+            Object.keys(themesList).map((key,index) => {
                 return (
-                    <div className="theme flex-column justify-content-around">
+                    <div className="theme flex-column justify-content-around" key={index}>
                         <div className="boxThemeLogo">
                             <img src={themesList[key].logo} alt="" />
                         </div>
